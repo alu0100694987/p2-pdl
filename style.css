@@ -19,6 +19,14 @@
     text-align: right;
   }
   
+  table td {
+    border: 3px ridge white;
+  }
+  
+  table td.areat {
+    border: none;
+  }
+  
   input {
     margin-left: 15px;
     text-align: right;
@@ -56,11 +64,22 @@
   }
   
   #resultado {
-    text-align: center;
+    padding: 10px;
+  }
+  
+  #tests {
+    padding-left: 60px;
+    font-family: Cursive;
+    font-size: 20px;
   }
   
 /* Resultado */
 
-  #tabla_resultado table, td { 
-    border: 2px solid white;
+  #result { 
+    padding: 10px;
+    border: 4px outset white;
+  }
+  
+  .error {
+    background-color: red; 
   }

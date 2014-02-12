@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  
+    <title>Mocha</title>
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="mocha.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+     
+  </head>
+  
+  <body>
+    <div id="mocha"></div>
+    
+    <script src="mocha.js"></script>
+    <script src="chai.js"></script>
+    <script src="../csv.js"></script>
+    <script>mocha.setup('tdd')</script>
+    <script src="tests.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <script>
+      mocha.run();
+    </script>
+    
+      <div id="titulo">
+        <h1>Comma Separated Values - Analizador</h1>
+      </div>
+    
+      <div id="csv">
+    
+        <p>Introduzca una cadena de texto en formato CSV. El programa muestra en una tabla los datos introducidos.</p>
+    
+        <div id="area">
+    
+          <table>
+            <tr>
+              <th>Texto CSV:</th>
+              <td class="areat"><textarea autofocus cols="60" rows="4" id="original">
+                "Los", 10, "elefantes"
+                "rosa", "efervescentes", "beben"
+                "agua", "en", "el"
+                "bosque", "negro", "()>" </textarea></td>
+            </tr>
+          </table>
+      
+          <div id="boton">  
+            <button type="button"> Generar Tabla </button><br>
+          </div>
+        </div>
+      
+        <div id="resultado">
+          <span class="output" id="target"></span>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  
+</html>
