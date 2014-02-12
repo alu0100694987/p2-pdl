@@ -1,0 +1,66 @@
+
+/* General */
+ 
+  html * {
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: #B9E3FF;
+  }
+  
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+  }
+  
+  th, td { 
+    vertical-align: top; 
+    text-align: right;
+  }
+  
+  input {
+    margin-left: 15px;
+    text-align: right;
+  }
+  
+  textarea {
+    border: inset;
+    border-color: white;
+  }
+  
+  table.center { 
+    margin-left:auto; 
+    margin-right:auto; 
+  }
+
+/* Capas */
+
+  #csv {
+    margin: 60px;
+  }
+  
+  #titulo {
+    margin: 40px;
+    text-align: left;
+  }
+  
+  #area {
+    padding-left: 40px;
+    font-size: 20px;
+  }
+  
+  #boton {
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  
+  #resultado {
+    text-align: center;
+  }
+  
+/* Resultado */
+
+  #tabla_resultado table, td { 
+    border: 2px solid white;
+  }

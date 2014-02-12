@@ -1,0 +1,54 @@
+<html>
+
+  <head>
+  
+    <title>CSV - Analizador</title>
+    <meta name="Author" content="Cristo González Rodríguez - alu0100694987" />  
+    <meta name="Description" content="Conversor de temperaturas en JavaScript" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="csv.js" type="text/javascript"></script>
+     
+  </head>
+  
+  <body>
+  
+    <div id="titulo">
+      <h1>Comma Separated Values - Analizador</h1>
+    </div>
+    
+    <div id="csv">
+    
+      <p>Introduzca una cadena de texto en formato CSV. El programa muestra en una tabla los datos introducidos.</p>
+    
+      <div id="area">
+    
+        <table>
+          <tr>
+            <th>Texto CSV:</th>
+            <td><textarea autofocus cols="60" rows="4" id="original">
+              "Los", 10, "elefantes"
+              "rosa", "efervescentes", "beben"
+              "agua", "en", "el"
+              "bosque", "negro", "()>" </textarea></td>
+          </tr>
+        </table>
+      
+        <div id="boton">  
+          <button type="button"> Generar Tabla </button><br>
+        </div>
+      </div>
+      
+      <div id="resultado">
+        <span class="output" id="tabla_resultado"></span>
+      </div>
+    </div>
+    
+  </body>
+  
+</html>
