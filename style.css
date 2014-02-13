@@ -6,7 +6,10 @@
   }
   
   body {
-    background-color: #B9E3FF;
+    background: #183026 url('images/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
   }
   
   h1 {
@@ -27,6 +30,10 @@
     border: none;
   }
   
+  a:link {
+    text-decoration: none;
+  }
+  
   input {
     margin-left: 15px;
     text-align: right;
@@ -41,11 +48,20 @@
     margin-left:auto; 
     margin-right:auto; 
   }
-
+  
+footer {
+   position:fixed;
+   left:0;
+   bottom:0;
+   height:20px;
+   width:100%;
+   padding: 0.6em 0 0.6em 0;
+   box-shadow: inset 0px 10px 60px 0px rgba(0,0,0,0.15);
+}
 /* Capas */
 
   #csv {
-    margin: 60px;
+    margin: 40px;
   }
   
   #titulo {
@@ -72,7 +88,7 @@
     font-family: Cursive;
     font-size: 20px;
   }
-  
+
 /* Resultado */
 
   #result { 
@@ -82,4 +98,22 @@
   
   .error {
     background-color: red; 
+  }
+  
+/* Pie de página */
+
+  #piedepagina {
+    text-align: center;
+    text-shadow: 1.5px 1.5px 1.5px white;
+    color: #000000;
+  }
+  
+  #piedepagina a {
+    color: #000000;
+  }
+  
+  #piedepagina a:hover {
+    color: #000000;
+    text-shadow: 1.5px 1.5px 1.5px black, 0px 4px 1px white;
+    text-decoration: none;
   }
