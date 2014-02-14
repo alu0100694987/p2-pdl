@@ -1,4 +1,11 @@
 
+/* Fuentes */
+
+  @font-face {
+    font-family: 'Andika';
+    src: url("fuentes/Andika-R.ttf");
+  }
+
 /* General */
  
   html * {
@@ -13,8 +20,10 @@
   }
   
   h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 44px;
+    font-family: Andika;
+    font-size: 48px;
+    text-shadow: 0px 0px 8px white;
+    color: 3A3B43;
   }
   
   th, td { 
@@ -26,12 +35,17 @@
     border: 3px ridge white;
   }
   
-  table td.areat {
-    border: none;
+  tr {
+    background-color: #BCF5A9;
   }
-  
+
+  tr:hover {
+    background-color: green;
+  }
+ 
   a:link {
     text-decoration: none;
+    font-family: Andika;
   }
   
   input {
@@ -40,24 +54,25 @@
   }
   
   textarea {
+    font-family: Andika;
     border: inset;
     border-color: white;
   }
   
-  table.center { 
-    margin-left:auto; 
-    margin-right:auto; 
+  button {
+    font-family: Andika;
   }
   
-footer {
-   position:fixed;
-   left:0;
-   bottom:0;
-   height:20px;
-   width:100%;
-   padding: 0.6em 0 0.6em 0;
-   box-shadow: inset 0px 10px 60px 0px rgba(0,0,0,0.15);
-}
+  footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+    height:20px;
+    width:100%;
+    padding: 0.6em 0 0.6em 0;
+    box-shadow: inset 0px 10px 60px 0px rgba(0,0,0,0.15);
+  }
+  
 /* Capas */
 
   #csv {
@@ -66,7 +81,7 @@ footer {
   
   #titulo {
     margin: 40px;
-    text-align: left;
+    text-align: center;
   }
   
   #area {
@@ -75,7 +90,7 @@ footer {
   }
   
   #boton {
-    margin-left: 90px;
+    margin-left: 140px;
     margin-top: 10px;
   }
   
@@ -89,6 +104,30 @@ footer {
     font-size: 20px;
   }
 
+/* Contenido */
+
+  table.center { 
+    margin-left:auto; 
+    margin-right:auto; 
+  }
+  
+  table td.areat {
+    border: none;
+  }
+  
+  table th.areatl {
+    padding-right: 30px;
+    text-shadow: 1px 1px 3px white;
+  }
+  
+  tr.areatr {
+    background-color: transparent;
+  }
+  
+  tr:hover.areatr {
+    background-color: transparent;
+  }
+  
 /* Resultado */
 
   #result { 
@@ -97,7 +136,14 @@ footer {
   }
   
   .error {
+    background-color: #F5A9A9; 
+  }
+  
+  .error:hover {
     background-color: red; 
+  }
+  tr.areatr {
+    background-color: none;
   }
   
 /* Pie de página */

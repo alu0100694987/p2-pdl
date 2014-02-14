@@ -2,7 +2,7 @@
 <html>
 
   <head>
-  
+ 
     <title>Mocha</title>
     <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
     
@@ -11,7 +11,9 @@
 
     <link rel="stylesheet" href="mocha.css" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
-     
+    
+    <script type="text/html" id="template"> <% _.each(items, function(name) { %><td><%= name %> </td><% }); %> </script>
+    
   </head>
   
   <body>
@@ -29,37 +31,40 @@
       mocha.run();
     </script>
     
-      <div id="titulo">
-        <h1>Comma Separated Values - Analizador</h1>
+    <!-- Contenido -->
+      
+    <div id="csv">
+    
+      <div id="area">
+    
+        <table>
+          <tr class="areatr">
+            <th class="areatl">Texto CSV:</th>
+            <td class="areat"><textarea autofocus cols="60" rows="4" id="original">
+              "Los", 10, "elefantes"
+              "rosa", "efervescentes", "beben"
+              "agua", "en", "el"
+              "bosque", "negro", "()>" </textarea></td>
+          </tr>
+        </table>
+      
+        <div id="boton">  
+          <button type="button"> Generar Tabla </button><br>
+        </div>
       </div>
-    
-      <div id="csv">
-    
-        <p>Introduzca una cadena de texto en formato CSV. El programa muestra en una tabla los datos introducidos.</p>
-    
-        <div id="area">
-    
-          <table>
-            <tr>
-              <th>Texto CSV:</th>
-              <td class="areat"><textarea autofocus cols="60" rows="4" id="original">
-                "Los", 10, "elefantes"
-                "rosa", "efervescentes", "beben"
-                "agua", "en", "el"
-                "bosque", "negro", "()>" </textarea></td>
-            </tr>
-          </table>
-      
-          <div id="boton">  
-            <button type="button"> Generar Tabla </button><br>
-          </div>
-        </div>
-      
-        <div id="resultado">
-          <span class="output" id="target"></span>
-        </div>
+        
+      <div id="resultado">
+        <span class="output" id="target"></span>
       </div>
     </div>
+    
+    <!-- Footer -->
+    
+    <footer>
+      <div id="piedepagina">
+        Practica - CSV Analizador | <a href="index.html">http://alu0100694987.github.io/p2-pdl/</a> | alu0100694987
+      </div>
+    </footer>
     
   </body>
   

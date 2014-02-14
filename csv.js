@@ -15,11 +15,6 @@ function calculate() {
   var lines = temp.split(/\n+\s*/); // Se separa la cadena csv por los saltos de línea
   var commonLength = NaN;
   var r = [];
-  
-  /* Plantilla underscore (con truco malvado) */
-  var row = "<% _.each(items, function(name) { %>" +
-            " <td><%= name %></td>" +
-            " <% }); %>";
 
   if (window.localStorage) localStorage.original = temp;
   
@@ -55,7 +50,7 @@ function calculate() {
       }
       
       var tr = error? '<tr class="error">' : '<tr>'; // Si ha ocurrido algun error, la clase de la fila en la que ha ocurrido sera 'error' (para la utlizacion de estilos)
-      r.push(tr + _.template(row, {items : result}) + "</tr>"); // Se utiliza una plantilla para mostrar las filas
+      r.push(tr + _.template(template.innerHTML, {items : result}) + "</tr>"); // Se utiliza una plantilla para mostrar las filas
     }
     
     /* Si no ha casado con nada */
